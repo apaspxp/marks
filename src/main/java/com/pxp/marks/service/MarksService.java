@@ -25,6 +25,7 @@ public class MarksService {
                 new Marks(2, "Zoology", 39)
         );
 
+        System.out.println("Mark Service");
         return marksList.stream().filter(m -> m.getRollno() == rollno).collect(Collectors.toList());
     }
 }
